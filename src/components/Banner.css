@@ -1,0 +1,39 @@
+.wallpaper-container {
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 840px) {
+  .wallpaper-container {
+    height: 45vh;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wallpaper-container {
+    height: 40vh;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .wallpaper-container {
+    height: 30vh;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}

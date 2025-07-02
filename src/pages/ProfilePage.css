@@ -1,0 +1,141 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-info {
+  padding: 1.5rem;
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.profile-info p {
+  color: rgb(99, 87, 87);
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  padding: 0.3rem;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.items-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  max-width: 1000px;
+  padding: 1.5rem;
+}
+
+.items-box {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.arrow {
+  font-size: 24px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.items-section .items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+  margin-top: 1rem;
+}
+.edit-profile-button {
+  display: none;
+  background-color: #0798e6;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.edit-profile-button:hover {
+  background-color: #024c71;
+}
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+  }
+
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-profile-button {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .items-box {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-info p {
+    font-size: 15px;
+  }
+
+  .items-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .items-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .arrow {
+    font-size: 18px;
+  }
+
+  .edit-profile-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .items-section {
+    flex-direction: column;
+  }
+}

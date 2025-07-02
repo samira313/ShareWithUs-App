@@ -1,0 +1,52 @@
+.explain-text {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 100px;
+  margin: 3rem auto;
+  width: 80%;
+  height: 100%;
+  max-width: 1000px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.explain-text:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+.explain-text h2 {
+  font-size: clamp(2.2rem, 2.5vw, 2.5rem);
+  color: #0798e6;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  animation: fadeIn 2s ease forwards;
+}
+
+.explain-text p {
+  margin-top: 1rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.15rem);
+  color: #333;
+  line-height: 1.6;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .explain-text {
+    padding: 1.5rem 1rem;
+    margin: 4rem 1rem;
+  }
+  .explain-text h2 {
+    font-size: 1rem;
+  }
+  .explain-text p {
+    font-size: 0.8rem;
+  }
+}

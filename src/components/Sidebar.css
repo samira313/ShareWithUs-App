@@ -1,0 +1,139 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 220px;
+  height: 100%;
+  background: linear-gradient(135deg, #e9e8e8 50%, #0789e6 100%);
+  padding: 20px;
+  transition: left 0.5s ease-in-out;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-family: "PT Serif", serif;
+}
+
+.sidebar.open {
+  left: 0;
+}
+.sidebar-title {
+  margin: 1.5rem 0;
+  color: #0789e6;
+  font-size: 23px;
+  font-weight: 600;
+}
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.category-list li {
+  margin-bottom: 5px;
+}
+.category-btn {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #443b3b;
+  font-size: 16px;
+  font-family: "PT Serif", serif;
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.category-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000000;
+  transform: scale(1.1);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.category-btn:focus {
+  outline: 2px solid #047fc0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.sidebar ul li:hover {
+  color: #b3d4fc;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0789e6;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .sidebar-title,
+  .sidebar h4 {
+    font-size: 18px;
+  }
+
+  .category-btn,
+  .sidebar ul li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .close-btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .sidebar {
+    width: 200px;
+    padding: 18px;
+  }
+
+  .sidebar-title,
+  .sidebar h4 {
+    font-size: 19px;
+  }
+
+  .category-btn,
+  .sidebar ul li {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .close-btn {
+    font-size: 22px;
+  }
+}

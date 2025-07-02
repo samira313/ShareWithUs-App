@@ -1,0 +1,7 @@
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
