@@ -1,5 +1,5 @@
 ![ShareWithUs](<Screenshot 2025-07-02 150025.png>)
-![ShareWithUs](<Screenshot-2025-07-04-090032.png>)
+![ShareWithUs](<Screenshot 2025-07-04 090032.png>)
 
 # Cohort 51 final project - ShareWithUs
 
