@@ -18,7 +18,6 @@ Main features:
 - Contact item owners
 - Cloud image uploads using Cloudinary
 
-
 ### 📦 Tech Stack
 
 - **Frontend:** React, React Router, CSS

@@ -19,7 +19,7 @@ const forgotPassword = async (req, res) => {
     }
 
     // Here, normally we generate a reset token and send an email.
-    // But for now, just success response.
+    // But for now,just success response.
 
     return res.status(200).json({
       success: true,
