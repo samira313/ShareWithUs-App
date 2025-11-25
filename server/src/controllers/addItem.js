@@ -1,7 +1,7 @@
 import Item from "../models/Item.js";
 import { logError } from "../util/logging.js";
 
-// Add a new item to the database
+// Add a new item to the DB
 const addItem = async (req, res) => {
   // Get the User passed from authUser
   const user = req.user;
