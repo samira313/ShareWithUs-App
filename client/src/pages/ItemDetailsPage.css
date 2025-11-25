@@ -107,6 +107,22 @@
   margin: 0.3rem 0;
 }
 
+.send-message-btn {
+  background-color: #0798e6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.send-message-btn:hover {
+  background-color: #0579b3;
+}
+
 @media (max-width: 768px) {
   .details-content-container {
     flex-direction: column;

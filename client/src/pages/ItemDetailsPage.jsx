@@ -8,11 +8,12 @@ import Error from "../components/Error";
 import BorrowButton from "../components/BorrowButton";
 import "./ItemDetailsPage.css";
 import Rating from "../components/Rating";
-
+import ContactOwnerModal from "../components/ContactOwnerModal";
 const ItemDetailsPage = () => {
   // Extract item ID from URL params
   const { id } = useParams();
   const [item, setItem] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Use custom hook to fetch item details
   const { error, isLoading, performFetch, cancelFetch } = useFetch(
@@ -117,6 +118,18 @@ const ItemDetailsPage = () => {
                   onSuccess={performFetch}
                 />
               )}
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="send-message-btn"
+              >
+                Send Message
+              </button>
+
+              <ContactOwnerModal
+                ownerEmail={item?.ownerId?.email}
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+              />
             </div>
           </div>
 
